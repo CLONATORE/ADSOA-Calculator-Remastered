@@ -89,24 +89,29 @@ public class Main extends javax.swing.JFrame {
                 txtR.setText("Result:" + num.division(castA, castB));
                 Division d = new Division();
                 d.Divtext.setText(txtR.getText());
+                d.setVisible(false);
                 d.setVisible(true);
             }
             else if("*".equals(textop)){
                 txtR.setText("Result:" + num.multiplication(castA, castB));
                 Multiplication m = new Multiplication();
                 m.Multext.setText(txtR.getText());
+                m.setVisible(false);
                 m.setVisible(true);
             }
             else if("+".equals(textop)){
                 txtR.setText("Result:" + num.addition(castA, castB));
                 Addition a = new Addition();
                 a.Addtext.setText(txtR.getText());
+                a.setVisible(false);
                 a.setVisible(true); 
             }
             else if("-".equals(textop)){
                 txtR.setText("Result:" + num.sustraction(castA, castB));
                 Sustraction s = new Sustraction();
                 s.Sustext.setText(txtR.getText());
+                s.setVisible(false);
+                s.setVisible(true);
             }
     }//GEN-LAST:event_jButton1ActionPerformed
 
