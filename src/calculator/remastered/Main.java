@@ -15,6 +15,11 @@ public class Main extends javax.swing.JFrame {
      * Creates new form Main
      */
     public Main() {
+        System.out.println("ATENTION: Running status...");
+        ServerConnection instance  = new ServerConnection();
+        instance.ConnectionExchange();
+        Consistency init = new Consistency();
+        init.preservation();
         initComponents();
     }
 
@@ -76,17 +81,10 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-//        System.out.println("ATENTION: Running status...");
-//        ServerConnection instance  = new ServerConnection();
-//        instance.ConnectionExchange();
-//        Consistency init = new Consistency();
-//        init.preservation();
+
         double castA = Double.parseDouble(txtA.getText());
         String textop = txtop.getText();
         double castB = Double.parseDouble(txtB.getText());
-//        if("".equals(castA)||"".equals(textop)||"".equals(castB))
-//            System.out.println("Some text is missing");
-//        else{
             if("/".equals(textop)){
                 txtR.setText("Result:" + num.division(castA, castB));
                 Division d = new Division();
