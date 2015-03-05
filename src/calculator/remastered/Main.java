@@ -85,33 +85,66 @@ public class Main extends javax.swing.JFrame {
         double castA = Double.parseDouble(txtA.getText());
         String textop = txtop.getText();
         double castB = Double.parseDouble(txtB.getText());
+        
             if("/".equals(textop)){
                 txtR.setText("Result:" + num.division(castA, castB));
                 Division d = new Division();
+                Division i = new Division();
+                Division u = new Division();
+                Division o = new Division();
                 d.Divtext.setText(txtR.getText());
-                d.setVisible(false);
                 d.setVisible(true);
+                i.Divtext.setText(txtR.getText());
+                i.setVisible(true);
+                u.Divtext.setText(txtR.getText());
+                u.setVisible(true);
+                o.Divtext.setText(txtR.getText());
+                o.setVisible(true);
             }
             else if("*".equals(textop)){
                 txtR.setText("Result:" + num.multiplication(castA, castB));
                 Multiplication m = new Multiplication();
+                Multiplication g = new Multiplication();
+                Multiplication f = new Multiplication();
+                Multiplication d = new Multiplication();
                 m.Multext.setText(txtR.getText());
-                m.setVisible(false);
                 m.setVisible(true);
+                g.Multext.setText(txtR.getText());
+                g.setVisible(true);
+                f.Multext.setText(txtR.getText());
+                f.setVisible(true);
+                d.Multext.setText(txtR.getText());
+                d.setVisible(true);
             }
             else if("+".equals(textop)){
                 txtR.setText("Result:" + num.addition(castA, castB));
                 Addition a = new Addition();
+                Addition w = new Addition();
+                Addition x = new Addition();
+                Addition y = new Addition();
                 a.Addtext.setText(txtR.getText());
-                a.setVisible(false);
                 a.setVisible(true); 
+                w.Addtext.setText(txtR.getText());
+                w.setVisible(true);
+                x.Addtext.setText(txtR.getText());
+                x.setVisible(true);
+                y.Addtext.setText(txtR.getText());
+                y.setVisible(true);
             }
             else if("-".equals(textop)){
                 txtR.setText("Result:" + num.sustraction(castA, castB));
                 Sustraction s = new Sustraction();
+                Sustraction j = new Sustraction();
+                Sustraction k = new Sustraction();
+                Sustraction l = new Sustraction();
                 s.Sustext.setText(txtR.getText());
-                s.setVisible(false);
                 s.setVisible(true);
+                j.Sustext.setText(txtR.getText());
+                j.setVisible(true);
+                k.Sustext.setText(txtR.getText());
+                k.setVisible(true);
+                l.Sustext.setText(txtR.getText());
+                l.setVisible(true);
             }
     }//GEN-LAST:event_jButton1ActionPerformed
 

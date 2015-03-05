@@ -34,6 +34,13 @@ public class Addition extends javax.swing.JFrame {
         setTitle("Addition");
 
         jButton1.setText("Kill");
+        jButton1.setActionCommand("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -59,6 +66,11 @@ public class Addition extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        Consistency init = new Consistency();
+        init.preservadd();
+        dispose();
+    }
     /**
      * @param args the command line arguments
      */

@@ -40,6 +40,12 @@ public class Multiplication extends javax.swing.JFrame {
         });
 
         jButton1.setText("Kill");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -68,6 +74,13 @@ public class Multiplication extends javax.swing.JFrame {
     private void MultextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MultextActionPerformed
 
     }//GEN-LAST:event_MultextActionPerformed
+   
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        Consistency init = new Consistency();
+        init.preservmul();
+        dispose();
+    }
+
 
     /**
      * @param args the command line arguments
